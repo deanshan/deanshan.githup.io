@@ -726,9 +726,9 @@
     </audio>
 
     <div id="typedStrings" style="display: none;">
-        <p>宝贝，爱你</p>
+        <p>XX，XX</p>
     </div>
-    <span id="span" class="blue">爱你，宝贝</span>
+    <span id="span" class="blue">XX，XX</span>
 
     <div class="heart" onclick="play()">
         <i class="text"></i>
@@ -742,17 +742,17 @@
     var myAudio = document.getElementById("myAudio");
     myAudio.autoplay;
     var text = document.querySelector(".text");
-    text.innerHTML = "宝贝，爱你"
+    text.innerHTML = "XX，XX"
     var flag = false;
     function play() {
         if(flag) {
             myAudio.play();
             flag = false;
-            text.innerHTML = "爱你，宝贝"
+            text.innerHTML = "XX，XX"
         } else {
             myAudio.pause();
             flag = true;
-            text.innerHTML = "宝贝，爱你"
+            text.innerHTML = "XX，XX"
         }
     }
     $("#span").typed({
